@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="D:\study\Node-ts-skeleton\tests\unit-tests\middleware\error-handler.spec.ts">
+  </file>
+  <file path="D:\study\Node-ts-skeleton\tests\unit-tests\components\SystemStatusController.spec.ts">
+  </file>
+  <file path="D:\study\Node-ts-skeleton\tests\unit-tests\utils\index.spec.ts">
+    <testCase name="getEncryptedText should return input if encryption is not enabled" duration="113"/>
+    <testCase name="getEncryptedText should return input if secret key is not provided" duration="1"/>
+    <testCase name="getEncryptedText should return encrypted input if encryption is enabled and secret key is provided" duration="2"/>
+    <testCase name="getEncryptedText should return encrypted string if input is already a string" duration="1"/>
+  </file>
+  <file path="D:\study\Node-ts-skeleton\tests\unit-tests\lib\crypto.spec.ts">
+    <testCase name="Crypto Lib (Encryption/Decryption) Testing for text" duration="18"/>
+    <testCase name="Crypto Lib (Encryption/Decryption) Testing for array" duration="5"/>
+    <testCase name="Crypto Lib (Encryption/Decryption) Testing for object" duration="4"/>
+  </file>
+  <file path="D:\study\Node-ts-skeleton\tests\integration-tests\app.integration.spec.ts">
+    <testCase name="status integration tests can get default route success" duration="50"/>
+    <testCase name="status integration tests can get default web route success" duration="14">
+      <failure message="Error: expected &quot;Content-Type&quot; of &quot;application/json; charset=utf-8&quot;, got &quot;text/html; charset=utf-8&quot;"><![CDATA[Error: expected "Content-Type" of "application/json; charset=utf-8", got "text/html; charset=utf-8"
+    at Object.<anonymous> (D:\study\Node-ts-skeleton\tests\integration-tests\app.integration.spec.ts:28:5)
+    at Promise.then.completed (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\testWorker.js:106:12)
+----
+    at Test._assertHeader (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:236:14)
+    at D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:628:28)
+    at Server.emit (node:events:514:28)
+    at emitCloseNT (node:net:2273:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testCase>
+  </file>
+  <file path="D:\study\Node-ts-skeleton\tests\integration-tests\status.integration.spec.ts">
+    <testCase name="status integration tests can get server time" duration="58">
+      <failure message="Error: expected &quot;Content-Type&quot; of &quot;text/html; charset=utf-8&quot;, got &quot;application/json; charset=utf-8&quot;"><![CDATA[Error: expected "Content-Type" of "text/html; charset=utf-8", got "application/json; charset=utf-8"
+    at Object.<anonymous> (D:\study\Node-ts-skeleton\tests\integration-tests\status.integration.spec.ts:23:14)
+    at Promise.then.completed (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\testWorker.js:106:12)
+----
+    at Test._assertHeader (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:236:14)
+    at D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:628:28)
+    at Server.emit (node:events:514:28)
+    at emitCloseNT (node:net:2273:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testCase>
+    <testCase name="status integration tests can get server system info" duration="27">
+      <failure message="Error: expected &quot;Content-Type&quot; of &quot;text/html; charset=utf-8&quot;, got &quot;application/json; charset=utf-8&quot;"><![CDATA[Error: expected "Content-Type" of "text/html; charset=utf-8", got "application/json; charset=utf-8"
+    at Object.<anonymous> (D:\study\Node-ts-skeleton\tests\integration-tests\status.integration.spec.ts:33:14)
+    at Promise.then.completed (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\testWorker.js:106:12)
+----
+    at Test._assertHeader (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:236:14)
+    at D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:628:28)
+    at Server.emit (node:events:514:28)
+    at emitCloseNT (node:net:2273:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testCase>
+    <testCase name="status integration tests can get server system usage" duration="9">
+      <failure message="Error: expected &quot;Content-Type&quot; of &quot;text/html; charset=utf-8&quot;, got &quot;application/json; charset=utf-8&quot;"><![CDATA[Error: expected "Content-Type" of "text/html; charset=utf-8", got "application/json; charset=utf-8"
+    at Object.<anonymous> (D:\study\Node-ts-skeleton\tests\integration-tests\status.integration.spec.ts:43:14)
+    at Promise.then.completed (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\testWorker.js:106:12)
+----
+    at Test._assertHeader (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:236:14)
+    at D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:628:28)
+    at Server.emit (node:events:514:28)
+    at emitCloseNT (node:net:2273:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testCase>
+    <testCase name="status integration tests can get server system process info" duration="7">
+      <failure message="Error: expected &quot;Content-Type&quot; of &quot;text/html; charset=utf-8&quot;, got &quot;application/json; charset=utf-8&quot;"><![CDATA[Error: expected "Content-Type" of "text/html; charset=utf-8", got "application/json; charset=utf-8"
+    at Object.<anonymous> (D:\study\Node-ts-skeleton\tests\integration-tests\status.integration.spec.ts:53:14)
+    at Promise.then.completed (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\testWorker.js:106:12)
+----
+    at Test._assertHeader (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:236:14)
+    at D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:628:28)
+    at Server.emit (node:events:514:28)
+    at emitCloseNT (node:net:2273:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testCase>
+    <testCase name="status integration tests should get the error" duration="46">
+      <failure message="Error: expected &quot;Content-Type&quot; of &quot;text/html; charset=utf-8&quot;, got &quot;application/json; charset=utf-8&quot;"><![CDATA[Error: expected "Content-Type" of "text/html; charset=utf-8", got "application/json; charset=utf-8"
+    at Object.<anonymous> (D:\study\Node-ts-skeleton\tests\integration-tests\status.integration.spec.ts:62:14)
+    at Promise.then.completed (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\study\Node-ts-skeleton\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\study\Node-ts-skeleton\node_modules\jest-runner\build\testWorker.js:106:12)
+----
+    at Test._assertHeader (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:236:14)
+    at D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:308:13
+    at Test._assertFunction (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:285:13)
+    at Test.assert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:164:23)
+    at Server.localAssert (D:\study\Node-ts-skeleton\node_modules\supertest\lib\test.js:120:14)
+    at Object.onceWrapper (node:events:628:28)
+    at Server.emit (node:events:514:28)
+    at emitCloseNT (node:net:2273:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21)]]></failure>
+    </testCase>
+  </file>
+</testExecutions>

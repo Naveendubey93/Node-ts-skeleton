@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "lib": ["es2020"],
+    "target": "es2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strict": true, // Enable all strict type-checking options
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure file names are correctly cased
+    "baseUrl": "src",
+    "paths": {
+      "components/*": ["components/*"]
+    },
+  },
+  "include": [
+    "src/**/*.ts",
+    "index.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
