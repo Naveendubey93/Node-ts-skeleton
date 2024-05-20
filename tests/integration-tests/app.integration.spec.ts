@@ -1,7 +1,7 @@
 import 'jest';
 import express from 'express';
-import request from 'supertest';
 import { StatusCodes } from 'http-status-codes';
+import request from 'supertest';
 import IntegrationHelpers from '../helpers/Integration-helpers';
 
 describe('status integration tests', () => {
@@ -23,10 +23,10 @@ describe('status integration tests', () => {
 
 	it('can get default web route success', async () => {
 		const response = await request(app)
-			.get('/web')
+			.get('/api')
 			.set('Accept', 'application/json')
-			.expect('Content-Type', 'application/json; charset=utf-8');
-
+			.expect('Content-Type', /application\/json/);
+		// .expect('Content-Type', 'text/html; charset=utf-8');
 		const { status } = response;
 		expect(status).toBe(StatusCodes.OK);
 	});

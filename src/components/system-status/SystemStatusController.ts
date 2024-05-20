@@ -78,7 +78,7 @@ export default class SystemStatusController extends BaseController {
 			res.locals.data = response;
 
 			// super.send(res);
-			super.sendSuccessResponse(res, StatusCodes.CREATED);
+			super.sendSuccessResponse(res, StatusCodes.OK);
 		} catch (err) {
 			next(err);
 		}
