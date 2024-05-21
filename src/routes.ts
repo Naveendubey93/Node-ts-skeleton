@@ -1,10 +1,14 @@
 import { Router } from 'express';
 
-import SystemStatusController from './components/system-status/SystemStatusController';
+// import SystemStatusController from './components/system-status/SystemStatusController';
 
-import UserController from './components/user/UserController';
-import UserRepository from './components/user/UserRepository';
-import UserService from './components/user/UserService';
+// import UserController from './components/user/UserController';
+// import UserRepository from './components/user/UserRepository';
+// import UserService from './components/user/UserService';
+
+import container from './inversify.config';
+
+import { IController } from './types/IController';
 
 import { RouteDefinition } from './types/RouteDefinition';
 
@@ -40,22 +44,22 @@ function registerControllerRoutes(routes: RouteDefinition[]): Router {
  */
 export default function registerRoutes(): Router {
 	const router = Router();
-	const userRepository = new UserRepository();
-	const userService = new UserService(userRepository);
+	// const userRepository = new UserRepository();
+	// const userService = new UserService(userRepository);
 	// Define an array of controller objects
-	const controllers = [
-		new SystemStatusController(),
-		new UserController(userService),
+	const controllers: IController[] = [
+		// new SystemStatusController(),
+		// new UserController(userService),
+		container.get<IController>('SystemStatusController'),
+		container.get<IController>('UserController'),
 	];
 
-	// Dynamically register routes for each controller
+
 	controllers.forEach((controller) => {
-		// make sure each controller has basePath attribute and routes() method
 		router.use(
 			`/v1/${controller.basePath}`,
 			registerControllerRoutes(controller.routes()),
 		);
 	});
-
 	return router;
 }

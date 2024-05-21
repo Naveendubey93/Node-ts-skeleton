@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="D:\study\Node-ts-skeleton\tests\unit-tests\middleware\error-handler.spec.ts">
-    <testCase name="addErrorHandler should send encrypted error response" duration="0"/>
-    <testCase name="addErrorHandler should call next if no error" duration="0"/>
+    <testCase name="addErrorHandler should send encrypted error response" duration="19"/>
+    <testCase name="addErrorHandler should call next if no error" duration="2"/>
     <testCase name="addErrorHandler should handle error without status" duration="5"/>
   </file>
 </testExecutions>

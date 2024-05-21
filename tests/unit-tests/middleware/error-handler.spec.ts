@@ -80,14 +80,14 @@ describe('addErrorHandler', () => {
 			StatusCodes.INTERNAL_SERVER_ERROR,
 		);
 
-		const expectedErrorObject = {
-			fields: undefined,
-			message: 'Test Error',
-			name: 'Error',
-			statusCode: StatusCodes.INTERNAL_SERVER_ERROR,
-			status: StatusCodes.INTERNAL_SERVER_ERROR,
-			error: true,
-		};
+		// const expectedErrorObject = {
+		// 	fields: undefined,
+		// 	message: 'Test Error',
+		// 	name: 'Error',
+		// 	statusCode: StatusCodes.INTERNAL_SERVER_ERROR,
+		// 	status: StatusCodes.INTERNAL_SERVER_ERROR,
+		// 	error: true,
+		// };
 
 		// expect(getEncryptedText).toHaveBeenCalledWith(expectedErrorObject);
 

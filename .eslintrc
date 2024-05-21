@@ -16,6 +16,12 @@
   },
   "plugins": ["prettier"],
   "rules": {
+   "no-use-before-define": ["error", {
+        "functions": true,
+        "classes": false,
+        "variables": true,
+        "allowNamedExports": false
+    }],
     "prettier/prettier": ["off", { "singleQuote": true }],
     "semi": ["error", "always"],
     "object-curly-spacing": ["error", "always"],
@@ -54,5 +60,6 @@
         "tsx": "never"
       }
     ]
+
   }
 }
