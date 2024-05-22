@@ -3,16 +3,11 @@ import { StatusCodes } from 'http-status-codes';
 
 import ApiError from '../../abstractions/ApiError';
 import CreateUserDto from '../../dtos/create-user.dto';
-// import { IUser } from '../../entities/user';
 import { IController } from '../../types/IController';
 
 import { RouteDefinition } from '../../types/RouteDefinition';
 import BaseController from '../BaseController';
 import UserService from './UserService';
-// import UserService from '../services/userService';
-
-// const userRepository = new UserRepository();
-// const userService = UserService.getInstance();
 export default class UserController
 	extends BaseController
 	implements IController

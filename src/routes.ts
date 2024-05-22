@@ -1,15 +1,6 @@
 import { Router } from 'express';
-
-// import SystemStatusController from './components/system-status/SystemStatusController';
-
-// import UserController from './components/user/UserController';
-// import UserRepository from './components/user/UserRepository';
-// import UserService from './components/user/UserService';
-
 import container from './inversify.config';
-
 import { IController } from './types/IController';
-
 import { RouteDefinition } from './types/RouteDefinition';
 
 function registerControllerRoutes(routes: RouteDefinition[]): Router {
@@ -26,7 +17,7 @@ function registerControllerRoutes(routes: RouteDefinition[]): Router {
 				controllerRouter.put(route.path, route.handler);
 				break;
 			case 'patch':
-				controllerRouter.put(route.path, route.handler);
+				controllerRouter.patch(route.path, route.handler); // Corrected from .put to .patch
 				break;
 			case 'delete':
 				controllerRouter.delete(route.path, route.handler);
@@ -38,22 +29,12 @@ function registerControllerRoutes(routes: RouteDefinition[]): Router {
 	return controllerRouter;
 }
 
-/**
- * Here, you can register routes by instantiating the controller.
- *
- */
 export default function registerRoutes(): Router {
 	const router = Router();
-	// const userRepository = new UserRepository();
-	// const userService = new UserService(userRepository);
-	// Define an array of controller objects
 	const controllers: IController[] = [
-		// new SystemStatusController(),
-		// new UserController(userService),
 		container.get<IController>('SystemStatusController'),
 		container.get<IController>('UserController'),
 	];
-
 
 	controllers.forEach((controller) => {
 		router.use(

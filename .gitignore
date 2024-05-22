@@ -7,11 +7,11 @@ temp/
 logs
 .env
 coverage/lcov-report
+test-report.xml
 coverage/coverage-final.json
 coverage/clover.xml
 /.nyc_output/
 logs/
-
 # don't check in  env files
 .env.prod
 .env.staging

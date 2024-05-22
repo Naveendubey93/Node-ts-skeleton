@@ -1,21 +1,21 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "Node Typescript Boilerplate for Microservices. Skeleton for Node.js Apps written in TypeScript (with Setup Instructions for ESLint, Prettier, and Husky)",
+        "description": "Node Typescript ts-boilerplate for Microservices. Skeleton for Node.js Apps written in TypeScript (with Setup Instructions for ESLint, Prettier, and Husky)",
         "version": "1.0.0",
-        "title": "Node Boilerplate"
+        "title": "Node ts-boilerplate"
     },
     "host": "",
     "basePath": "",
     "tags": [{
-        "name": "node-boilerplate",
-        "description": "Node Typescript Boilerplate"
+        "name": "node-ts-boilerplate",
+        "description": "Node Typescript ts-boilerplate"
     }],
     "schemes": ["http", "https"],
     "paths": {
         "/system/info": {
             "get": {
-                "tags": ["node-boilerplate"],
+                "tags": ["node-ts-boilerplate"],
                 "summary": "get system status",
                 "description": "",
                 "responses": {
@@ -31,7 +31,7 @@
         },
         "/system/time": {
             "get": {
-                "tags": ["node-boilerplate"],
+                "tags": ["node-ts-boilerplate"],
                 "summary": "get server time",
                 "description": "",
                 "responses": {
@@ -47,7 +47,7 @@
         },
         "/system/usage": {
             "get": {
-                "tags": ["node-boilerplate"],
+                "tags": ["node-ts-boilerplate"],
                 "summary": "get server usage",
                 "description": "",
                 "responses": {
@@ -63,7 +63,7 @@
         },
         "/system/process": {
             "get": {
-                "tags": ["node-boilerplate"],
+                "tags": ["node-ts-boilerplate"],
                 "summary": "get server process",
                 "description": "",
                 "responses": {
@@ -87,7 +87,7 @@
         }
     },
     "externalDocs": {
-        "description": "Find out more about Node Typescript Boilerplate",
-        "url": "https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30"
+        "description": "Find out more about Node Typescript ts-boilerplate",
+        "url": ""
     }
 }

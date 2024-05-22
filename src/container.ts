@@ -1,5 +1,3 @@
-import { IController } from './types/IController';
-
 class Container {
 	private instances: Map<string, any> = new Map();
 

@@ -1,27 +1,21 @@
 import { IUser } from '../../entities/user';
 import UserRepository from './UserRepository';
 
-export default class UserService {
-	private static instance: UserService;
-
+class UserService {
 	private userRepository: UserRepository;
+	private static instance: UserService;
 
 	private constructor(userRepository: UserRepository) {
 		this.userRepository = userRepository;
 	}
 
 	static getInstance(): UserService {
-		if (!UserService.instance) {
+		if (!this.instance) {
 			const userRepository = UserRepository.getInstance();
-			UserService.instance = new UserService(userRepository);
+			this.instance = new UserService(userRepository);
 		}
-		return UserService.instance;
+		return this.instance;
 	}
-	// private userRepository: UserRepository;
-
-	// constructor(userRepository: UserRepository) {
-	// 	this.userRepository = userRepository;
-	// }
 
 	async createUser(data: Partial<IUser>): Promise<IUser> {
 		return this.userRepository.create(data);
@@ -44,4 +38,4 @@ export default class UserService {
 	}
 }
 
-// export default UserService;
+export default UserService;
