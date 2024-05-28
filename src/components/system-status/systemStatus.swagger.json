@@ -1,0 +1,80 @@
+{
+  "tags": [
+    {
+      "name": "System-Status",
+      "description": "Get all system information"
+    }
+  ],
+  "paths": {
+    "/system/info": {
+      "get": {
+        "tags": ["System-Status"],
+        "summary": "Get system status",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/system/time": {
+      "get": {
+        "tags": ["System-Status"],
+        "summary": "Get server time",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/system/usage": {
+      "get": {
+        "tags": ["System-Status"],
+        "summary": "Get server usage",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        },
+        "security": []
+      }
+    },
+    "/system/process": {
+      "get": {
+        "tags": ["System-Status"],
+        "summary": "Get server process",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          }
+        },
+        "security": []
+      }
+    }
+  },
+  "definitions": {
+    "ApiResponse": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+}

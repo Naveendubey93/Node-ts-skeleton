@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from 'express';
 import { StatusCodes } from 'http-status-codes';
 
 import ApiError from '../../abstractions/ApiError';
-import CreateUserDto from '../../dtos/create-user.dto';
+import CreateUserDto from './dtos/create-user.dto';
 import { IController } from '../../types/IController';
 
 import { RouteDefinition } from '../../types/RouteDefinition';

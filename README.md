@@ -1,5 +1,4 @@
-# [Node-Typescript-Boilerplate](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=santoshshinde2012_node-boilerplate&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-boilerplate)![Github action workflow status](https://github.com/santoshshinde2012/node-boilerplate/actions/workflows/node.js.yml/badge.svg?branch=master)![CodeQL Analysis](https://github.com/santoshshinde2012/node-boilerplate/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)![njsscan Analysis](https://github.com/santoshshinde2012/node-boilerplate/actions/workflows/njsscan.yml/badge.svg?branch=master)![Maintainability](https://api.codeclimate.com/v1/badges/0e53f5d93de102b39641/maintainability)![Test Coverage](https://api.codeclimate.com/v1/badges/0e53f5d93de102b39641/test_coverage)
-
+# [Node-Typescript-Boilerplate]
 Skeleton for Node.js applications written in TypeScript
 
 
@@ -24,14 +23,12 @@ Try it!! I am happy to hear your feedback or any kind of new features.
 
 - Contiuous Integration
     - Added Github Action Workflow
-        - [sonarcloud.io](https://sonarcloud.io/summary/new_code?id=santoshshinde2012_node-boilerplate)
-        - [snyk.io](https://app.snyk.io/org/santoshshinde2012/project/c040efe4-a06a-451d-9b01-be0be90ee42c)
-        - [CodeQL](https://codeql.github.com/)
-        - [njsscan](https://opensecurity.in/#engineering) is a static application testing (SAST) tool that can find insecure code patterns in your node.js applications
+        - [sonarcloud.io]
+        - [snyk.io]
+        - [CodeQL]
+        - [njsscan] is a static application testing (SAST) tool that can find insecure code patterns in your node.js applications
         - [Codeclimate](https://codeclimate.com/)
-          - <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/maintainability"><img src="https://api.codeclimate.com/v1/badges/0e53f5d93de102b39641/maintainability" /></a>
-          - <a href="https://codeclimate.com/github/santoshshinde2012/node-boilerplate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/0e53f5d93de102b39641/test_coverage" /></a>
-
+          
 - Documentation Standards
     - Swagger documentation support and Postman collections
     - Clear instructions in the readme file
@@ -54,13 +51,14 @@ Try it!! I am happy to hear your feedback or any kind of new features.
 - [x] `http-status-codes`
 - [x] `winston`
 
-# [Start the application](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)
+# [Start the application]
 
-![Workflow](https://github.com/santoshshinde2012/node-boilerplate/blob/master/wiki/environment.jpg?raw=true)
+![Workflow](NODE_ENV=LOCAL|dev|test|production)
 
 ## Start The application in Development Mode
 
-- Clone the Application `git clone https://github.com/santoshshinde2012/node-boilerplate.git`
+- Clone the Application `git clone git clone https://nkdubey12@bitbucket.org/q3info/q3_architecture.git`
+- cd NodeJs/BasicArchitecture/Express-Node-Ts-skeleton
 - Install the dependencies `npm install`
 - Start the application `npm run dev`
 
@@ -90,7 +88,7 @@ Try it!! I am happy to hear your feedback or any kind of new features.
 
 ## Workflow
 
-![Workflow](https://github.com/santoshshinde2012/node-boilerplate/blob/master/wiki/boilerplate-components.jpg?raw=true)
+![Workflow]
 
 
 ## Encryption
@@ -110,13 +108,12 @@ The swagger documentation is available at the following url `${host}/docs`:
 - `${host}/system/process` -  Return the process details in response
 - `${host}/system/error` - Return the error generated object in response
 
-![Swagger API Documentation](https://github.com/santoshshinde2012/node-boilerplate/blob/master/wiki/swagger-api-documentation.jpg?raw=true)
+![Swagger API Documentation](https://bitbucket.org/q3info/q3_architecture/src/master/NodeJs/BasicArchitecture/Express-Node-Ts-skeleton/wiki/swagger-api-documentation.jpg)
 
 ### [Postman Collections](wiki/postman/node-boilerplate.postman_collection.json)
 
 ## Refrences
 
-- [Skeleton for Node.js Apps written in TypeScript](https://javascript.plainenglish.io/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)
 - [Setup Eslint Prettier and Husky in Node JS Typescript Project](https://gist.github.com/santoshshinde2012/e1433327e5f7a58f98fe3e6651c4d5de)
 
 ## Notes
@@ -141,27 +138,3 @@ chmod ug+x .git/hooks/*
 - Avoid other known vulnerabilities
 - Additional considerations
 
-### 3. Tutorials 
-- [Skeleton for Node.js Apps written in TypeScript (with Setup Instructions for ESLint, Prettier, and Husky)](https://blog.santoshshinde.com/skeleton-for-node-js-apps-written-in-typescript-444fa1695b30)
-- [Global Error and Response Handler in Node JS with Express and Typescript](https://blog.santoshshinde.com/global-error-and-response-handler-in-node-js-with-express-and-typescript-913ec06d74b3)
-- [Testing with Jest in TypeScript and Node.js for Beginners](https://blog.santoshshinde.com/beginners-guide-to-testing-jest-with-node-typescript-1f46a1b87dad)
-- [Static Code Analysis for Node.js and TypeScript Project using SonarQube](https://blog.santoshshinde.com/static-code-analysis-for-node-js-and-typescript-project-using-sonarqube-8f90799add06)
-- [Visualization of Node.js Event Emitter](https://blog.santoshshinde.com/visualization-of-node-js-event-emitter-4f7c9fe3a477)
-
-<hr/>
-
-### Connect with me on
-<div id="badges">
-  <a href="https://twitter.com/shindesan2012">
-    <img src="https://img.shields.io/badge/shindesan2012-black?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
-  </a>
-  <a href="https://www.linkedin.com/in/shindesantosh/">
-    <img src="https://img.shields.io/badge/shindesantosh-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-   <a href="https://blog.santoshshinde.com/">
-    <img src="https://img.shields.io/badge/Blog-black?style=for-the-badge&logo=medium&logoColor=white" alt="Medium Badge"/>
-  </a>
-  <a href="https://www.buymeacoffee.com/santoshshin" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/default-black.png" alt="Buy Me A Coffee" height="28" width="100">
-    </a>
-</div>

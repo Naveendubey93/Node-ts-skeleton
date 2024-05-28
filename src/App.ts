@@ -4,7 +4,8 @@ import express from 'express';
 import helmet from 'helmet';
 import 'dotenv/config';
 import swaggerUi from 'swagger-ui-express';
-import swaggerDocument from '../swagger.json';
+import swaggerDocument from '../swagger';
+
 import connectDB from './config/database';
 import addErrorHandler from './middleware/error-handler';
 import registerRoutes from './routes';
@@ -52,16 +53,10 @@ export default class App {
 		// Helmet can help protect your app from some well-known web vulnerabilities by setting HTTP headers appropriately.
 		this.express.use(helmet({ contentSecurityPolicy: false }));
 		this.express.use(express.json({ limit: '100mb' }));
-		this.express.use(
-			express.urlencoded({ limit: '100mb', extended: true }),
-		);
+		this.express.use(express.urlencoded({ limit: '100mb', extended: true }));
 		// add multiple cors options as per your use
 		const corsOptions = {
-			origin: [
-				'http://localhost:8080/',
-				'http://example.com/',
-				'http://127.0.0.1:8080',
-			],
+			origin: ['http://localhost:8080/', 'http://example.com/', 'http://127.0.0.1:8080'],
 		};
 		this.express.use(cors(corsOptions));
 	}
@@ -76,18 +71,11 @@ export default class App {
 		next();
 	}
 
-	private basePathRoute(
-		request: express.Request,
-		response: express.Response,
-	): void {
+	private basePathRoute(request: express.Request, response: express.Response): void {
 		response.json({ message: 'base path' });
 	}
 
 	private setupSwaggerDocs(): void {
-		this.express.use(
-			'/docs',
-			swaggerUi.serve,
-			swaggerUi.setup(swaggerDocument),
-		);
+		this.express.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 	}
 }
