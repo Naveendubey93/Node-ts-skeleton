@@ -10,12 +10,17 @@
     "prettier"
   ],
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "project": "./tsconfig.json",
      "tsconfigRootDir": "."
   },
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
+    "no-use-before-define": "off",
+    // "no-use-before-define": ["error", { "variables": false }],
+
+  "@typescript-eslint/no-use-before-define": ["error"],
+   "no-use-before-define": ["error", { "classes": false }],
     "prettier/prettier": ["off", { "singleQuote": true }],
     "semi": ["error", "always"],
     "object-curly-spacing": ["error", "always"],
@@ -31,7 +36,8 @@
     "no-underscore-dangle": "off",
     "no-shadow": "off",
     "no-new": 0,
-    "@typescript-eslint/no-shadow": ["error"],
+    // "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-use-before-declare": ["error", { "functions": true, "classes": true, "variables": true }],
     "@typescript-eslint/no-unused-vars": "warn",
     "quotes": [2, "single", { "avoidEscape": true }],
     "class-methods-use-this": "off",

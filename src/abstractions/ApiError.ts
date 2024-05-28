@@ -21,6 +21,8 @@ class ApiError extends Error implements IError {
 		this.message = msg;
 		this.statusCode = statusCode;
 		this.name = name;
+		Object.setPrototypeOf(this, new.target.prototype)
+		Error.captureStackTrace(this);
 		// this.fields = { name: { message: msg || '' } }; // Initialize with a default value
 	}
 }

@@ -3,6 +3,8 @@ import * as process from 'process';
 import { NextFunction, Request, Response } from 'express';
 import { StatusCodes } from 'http-status-codes';
 import ApiError from '../../abstractions/ApiError';
+import { IController } from '../../types/IController';
+
 import { RouteDefinition } from '../../types/RouteDefinition';
 import BaseController from '../BaseController';
 import {
@@ -12,7 +14,10 @@ import {
 	ISystemInfoResponse,
 } from './SystemStatusTypes';
 
-export default class SystemStatusController extends BaseController {
+export default class SystemStatusController
+	extends BaseController
+	implements IController
+{
 	public basePath = 'system';
 
 	public routes(): RouteDefinition[] {

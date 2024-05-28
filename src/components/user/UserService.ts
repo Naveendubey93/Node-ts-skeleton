@@ -3,9 +3,18 @@ import UserRepository from './UserRepository';
 
 class UserService {
 	private userRepository: UserRepository;
+	private static instance: UserService;
 
-	constructor(userRepository: UserRepository) {
+	private constructor(userRepository: UserRepository) {
 		this.userRepository = userRepository;
+	}
+
+	static getInstance(): UserService {
+		if (!this.instance) {
+			const userRepository = UserRepository.getInstance();
+			this.instance = new UserService(userRepository);
+		}
+		return this.instance;
 	}
 
 	async createUser(data: Partial<IUser>): Promise<IUser> {

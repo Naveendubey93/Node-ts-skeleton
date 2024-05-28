@@ -1,13 +1,17 @@
 import { NextFunction, Request, Response } from 'express';
 import { StatusCodes } from 'http-status-codes';
+
 import ApiError from '../../abstractions/ApiError';
-import CreateUserDto from '../../dtos/create-user.dto';
-// import { IUser } from '../../entities/user';
+import CreateUserDto from './dtos/create-user.dto';
+import { IController } from '../../types/IController';
+
 import { RouteDefinition } from '../../types/RouteDefinition';
 import BaseController from '../BaseController';
 import UserService from './UserService';
-
-export default class UserController extends BaseController {
+export default class UserController
+	extends BaseController
+	implements IController
+{
 	public basePath = 'users';
 
 	private userService: UserService;
