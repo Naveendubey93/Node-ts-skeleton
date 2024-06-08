@@ -7,6 +7,7 @@
     "start": "node build/src/server.js",
     "dev": "nodemon --exec ts-node src/server.ts",
     "build": "tsc",
+    "postbuild": "cp src/components/User/user.swagger.json build/src/components/User/",
     "build1": "tsc -p . && cp package.json ./build/package.json && cp package-lock.json ./build/package-lock.json && cp .env ./build/.env",
     "lint": "eslint src/**/*.ts",
     "lint-fix": "eslint --fix src/**/*.ts",

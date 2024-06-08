@@ -18,7 +18,8 @@ steps:
 - script: |
     npm install --verbose
     npm run build --verbose
-  displayName: 'npm install and build'
+    npm run postbuild
+  displayName: 'npm install, build and postbuild'
 
 - task: PublishBuildArtifacts@1
   inputs:
