@@ -12,10 +12,17 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '20.10.0'
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
-    npm run build
+    npm install --verbose
+    npm run build --verbose
   displayName: 'npm install and build'
+
+  - task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: 'drop'
+    publishLocation: 'Container'
+  displayName: 'Publish Build Artifacts'
