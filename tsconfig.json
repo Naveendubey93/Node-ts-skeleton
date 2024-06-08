@@ -10,20 +10,22 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "strict": true, // Enable all strict type-checking options
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true, // Ensure file names are correctly cased
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": "src",
     "paths": {
       "components/*": ["components/*"]
-    },
+    }
   },
   "include": [
     "src/**/*.ts",
-     "tests/**/*",
+    "tests/**/*",
     "index.js"
   ],
   "exclude": [
-    "node_modules","build","dist"
+    "node_modules",
+    "build",
+    "dist"
   ]
 }
