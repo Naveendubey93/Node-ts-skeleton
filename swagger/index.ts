@@ -1,6 +1,6 @@
 import { merge } from 'lodash';
 import swaggerDefinition from './swaggerDefinition';
-import userSwagger from '../src/components/User/user.swagger.json';
+import userSwagger from '../src/components/user/user.swagger.json';
 import systemStatusSwagger from '../src/components/system-status/systemStatus.swagger.json';
 
 const combinedSwagger = merge(
